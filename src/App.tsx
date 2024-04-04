@@ -108,8 +108,6 @@ function App() {
   const timeDelta = 1000;
 
   const handleOnStateChange = (state: Reveal.RevealState) => {
-    console.log(state);
-
     if (state.indexh === 0 && state.indexv === 0) {
       setHeaderVisible("hidden");
     }
@@ -123,6 +121,11 @@ function App() {
     if (!(state.indexh === 0 && state.indexv === 0)) {
       setHeaderVisible("visible");
     }
+
+    if (state.indexh === 1 && state.indexv === 0) {
+      setTheme("white");
+    }
+
     setLiquidInit(true);
   }
 
@@ -177,12 +180,16 @@ function App() {
     }
   }, []);
 
-
-  console.log("PresState: ", presState);
-
   return (
-    <div className="bg-black w-screen h-screen">
-      <Header visible={headerVisible === "visible"} />
+    <div
+      className={`
+        
+      `}
+    >
+      <Header
+        visible={headerVisible === "visible"}
+        darkMode={theme === "black"}
+      />
       <RevealSlides
         key="rs-2"
         scrollSnap="proximity"

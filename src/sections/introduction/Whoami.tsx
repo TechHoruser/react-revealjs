@@ -1,6 +1,6 @@
 export const Whoami = () => {
   return <>
-    <section key="0-0" data-auto-animate data-background-color="#0c1821">
+    <section key="0-0" data-auto-animate data-background-color="#0c1821" data-theme="dark">
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100vw", height: "100vh" }}>
         <div style={{ position: "absolute", left: "-100vw", top: "0px", width: "100vw", height: "100vh", backgroundColor: "#e9e7e6", zIndex: "3" }}></div>
         <h2 style={{ color: "#E7AD52", opacity: 1, height: "5.8vw", fontFamily: "'Bebas Neue', sans-serif", fontSize: "5vw", zIndex: "3" }}>react-reveal-slides</h2>
@@ -9,7 +9,7 @@ export const Whoami = () => {
         </div>
       </div>
     </section>
-    <section key="0-0-a" data-auto-animate data-background-color="#0c1821">
+    <section key="0-0-a" data-auto-animate>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100vw", height: "100vh" }}>
         <div style={{ position: "absolute", left: "0px", top: "0px", width: "100vw", height: "100vh", backgroundColor: "#e9e7e6", zIndex: "3", animation: "bgSlideInFromLeft 1.2s ease-in-out" }}></div>
         <h2 style={{ color: "#E7AD52", opacity: 0, height: 0, fontFamily: "'Bebas Neue', sans-serif", fontSize: "5vw", zIndex: "3", animation: "firstTitleOut 1s ease-in-out" }}>react-reveal-slides</h2>

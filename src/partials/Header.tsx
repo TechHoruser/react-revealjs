@@ -1,9 +1,11 @@
 interface HeaderProps {
   visible: boolean
+  darkMode: boolean
 }
 
 export const Header = ({
   visible,
+  darkMode,
 }: HeaderProps) => {
   return <div
     key="header-navbar"
@@ -13,6 +15,7 @@ export const Header = ({
       left-0
       w-full
       h-16
+      px-8
       flex
       justify-center
       items-center
@@ -29,6 +32,8 @@ export const Header = ({
         flex
         justify-between
         items-center
+        w-full
+        h-full
       `}
     >
       <h3
@@ -38,9 +43,33 @@ export const Header = ({
           transition-color
           duration-700
           ease-in-out
-          p-12
         `}
-      >IA</h3>
+      >Inteligencia Artificial</h3>
+      <div className="flex justify-right align-center relative h-8 w-52">
+        <img
+          className={`
+            absolute right-0
+            ${darkMode ? "opacity-100" : "opacity-0"}
+            transition-opacity
+            duration-700
+            ease-in-out
+          `}
+          src="white_logo_horizontal.png"
+          alt="logo"
+        />
+        <img
+          className={`
+            absolute right-0
+            h-8
+            ${darkMode ? "opacity-0" : "opacity-100"}
+            transition-opacity
+            duration-700
+            ease-in-out
+          `}
+          src="black_logo_horizontal.png"
+          alt="logo"
+        />
+      </div>
     </div>
   </div>
 }
