@@ -40,7 +40,7 @@ export const ProjectCard = ({
           </div>
         </div>
         <div className="card-content" style={{ display: "flex", justifyContent: "start", alignItems: "center", flexDirection: "column", gap: "0.5rem", marginTop: "1rem", flex: 1 }}>
-          <h4 style={{ color: "#f17a52", textAlign: "center", fontSize: "110%" }}>
+          <h4 style={{ color: "#E20077", textAlign: "center", fontSize: "160%" }}>
             {title}
           </h4>
           <p style={{ textAlign: "center" }}>

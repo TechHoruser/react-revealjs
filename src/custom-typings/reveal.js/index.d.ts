@@ -785,7 +785,7 @@ declare namespace Reveal {
     interface Options {
         // Presentation size
         // https://github.com/reveal/revealjs.com/blob/master/src/presentation-size.md
-        
+
         /**
          * The "normal" size of the presentation, aspect ratio will be preserved
          * when the presentation is scaled to fit different resolutions
@@ -881,12 +881,12 @@ declare namespace Reveal {
          * @defaultValue `false`
          */
         slideNumber?:
-            | boolean
-            | "h.v"
-            | "h/v"
-            | "c"
-            | "c/t"
-            | ((slideObject: any) => [string] | [string, string, string]);
+        | boolean
+        | "h.v"
+        | "h/v"
+        | "c"
+        | "c/t"
+        | ((slideObject: any) => [string] | [string, string, string]);
 
         /**
          * Can be used to limit the contexts in which the slide number appears
@@ -1606,6 +1606,7 @@ declare namespace Reveal {
      * @see {@link https://revealjs.com/creating-plugins/}
      */
     interface Plugin {
+        [x: string]: any;
         id: string;
         // eslint-disable-next-line @typescript-eslint/no-invalid-void-type
         init?(reveal: Api): void | Promise<any>;
