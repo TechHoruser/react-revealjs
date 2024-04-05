@@ -19,6 +19,13 @@ import { SecuencialChilds } from "./partials/SecuencialChilds";
 import RevealHighlight from "reveal.js/plugin/highlight/highlight";
 import { BingExample1 } from "./sections/bing/examples/Example1";
 import { End } from "./sections/ended/End";
+import { IaTypesResume } from "./sections/types/Resume";
+import { ForImage } from "./sections/types/ForImage";
+import { ForText } from "./sections/types/ForText";
+import { AisList } from "./sections/examples/AisList";
+import { Examples } from "./sections/examples/Examples";
+import { Risks } from "./sections/risks/Risks";
+import { Etich } from "./sections/risks/Etich";
 
 interface HoverEffectHandle {
   next: () => void;
@@ -228,27 +235,27 @@ function App() {
             sectionKey="1-1"
             intialIndex={1}
             children={[
-              <p style={{ padding: "1vh 16vw" }}>Since React creates HTML DOM elements out of JSX, there should be no reason we cant just put JSX inside of our RevealSlides component instead of the HTML markup Reveal.js normally expects.</p>,
-              <p style={{ padding: "1vh 16vw" }}>Simply put, React already takes care of converting JSX into something Reveal.js can work with.</p>,
-              <p style={{ padding: "1vh 16vw" }}>So, if you can make a React component, you can make a Reveal.js slide.</p>,
+              <p style={{ padding: "1vh 16vw" }}>Existen distintos tipos de inteligencia artificial, entre ellos:</p>,
+              <p style={{ padding: "1vh 16vw" }}>Inteligencia Supervisada</p>,
+              <p style={{ padding: "1vh 16vw" }}>Inteligencia No Supervisada</p>,
+              <p style={{ padding: "1vh 16vw" }}>Inteligencia Reforzada</p>,
+              <p style={{ padding: "1vh 16vw" }}>Inteligencia Mixta</p>,
             ]}
           />
         </section>
-        <section key="3">
-          <SecuencialChilds
-            sectionKey="1-1"
-            intialIndex={1}
-            children={[
-              <p>Since React creates HTML DOM elements out of JSX, there should be no reason we cant just put JSX inside of our RevealSlides component instead of the HTML markup Reveal.js normally expects.</p>,
-              <p>Simply put, React already takes care of converting JSX into something Reveal.js can work with.</p>,
-              <p>So, if you can make a React component, you can make a Reveal.js slide.</p>,
-            ]}
-          />
+        <section key="100">
+          <IaTypesResume sectionKey="100" startIndex={0} />
+          <ForImage sectionKey="100" startIndex={10} />
+          <ForText sectionKey="100" startIndex={30} />
         </section>
-        <section key="4">
-          <BingExample1
-            sectionKey="4"
-          />
+        <section key="310">
+          <Examples sectionKey="310" startIndex={0} />
+        </section>
+        <section key="400">
+          <Risks sectionKey="400" />
+        </section>
+        <section key="401">
+          <Etich sectionKey="401" />
         </section>
         <section key="999">
           <TechSlide />

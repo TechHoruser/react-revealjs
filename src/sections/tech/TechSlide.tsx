@@ -29,8 +29,6 @@ export const TechSlide = () => {
             techStack={["React:#149ECA", "Reveal.js:#D53F8C", "TypeScript:#2F74C0", "Tailwind:#2E83C6"]}
           />
         </div>
-        <div className="w-2/5">
-        </div>
       </div>
     </>
   )

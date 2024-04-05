@@ -10,7 +10,7 @@ export const Whoami = ({
   return <>
     <section key="0-0" data-auto-animate data-background-color={getDataBackground(theme)}>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100vw", height: "100vh" }}>
-        <div style={{ position: "absolute", left: "-100vw", top: "0px", width: "70vw", zIndex: "3" }}></div>
+        <div style={{ position: "absolute", left: "-100vw", top: "0px", width: "70vw", zIndex: "3", background: (theme === "white" ? "black" : "white"), animation: "bgSlideInFromLeft 1.2s ease-in-out" }}></div>
         <h2
           style={{
             color: "#E20077",
@@ -27,7 +27,7 @@ export const Whoami = ({
     </section>
     <section key="0-0-a" data-auto-animate>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100vw", height: "100vh" }}>
-        <div style={{ position: "absolute", left: "0px", top: "0px", width: "100vw", height: "100vh", backgroundColor: getDataBackground(getOpositeTheme(theme)), zIndex: "3", animation: "bgSlideInFromLeft 1.2s ease-in-out" }}></div>
+        <div style={{ position: "absolute", left: "0px", top: "0px", width: "100vw", height: "100vh", backgroundColor: '#FFFFFF', zIndex: "3", animation: "bgSlideInFromLeft 1.2s ease-in-out" }}></div>
         <h2 style={{
           color: "#E20077",
           opacity: 0,
@@ -46,7 +46,7 @@ export const Whoami = ({
       </div>
     </section>
     <section key="0-1" data-background-color={getDataBackground(getOpositeTheme(theme))}>
-      <p className="fragment fade-in-then-semi-out" data-fragment-index="0" style={{ lineHeight: "0.9" }}>¿Qué es la Inteligencia Artificial?</p >
+      <p className="fragment fade-in-then-semi-out" data-fragment-index="0" style={{ lineHeight: "0.9" }}>¿Qué es la Inteligencia Artificial?</p>
       <p className="fragment fade-in-then-semi-out" style={{ lineHeight: "0.9" }}>Tipos de Inteligencia Artificial</p>
       <p className="fragment fade-in-then-semi-out" style={{ lineHeight: "0.9" }}>¿Cómo Funcionan las IAs?</p>
       <p className="fragment fade-in-then-semi-out" style={{ lineHeight: "0.9" }}>Aplicaciones de la Inteligencia Artificial</p>

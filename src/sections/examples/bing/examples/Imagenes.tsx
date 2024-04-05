@@ -1,14 +1,14 @@
-interface BingExample1Props {
+interface Props {
   sectionKey: string
 }
 
-export const BingExample1 = ({
+export const EdgeCopilotGenerandoImágenes = ({
   sectionKey,
-}: BingExample1Props) =>
+}: Props) =>
   <section key={`${sectionKey}-0`}>
     <div className="w-full h-full flex justify-center align-center">
       <div className="w-3/5">
-        <p className="fragmen">COPILOT EXAMPLE</p>
+        <p className="fragmen">Copilot - Generando imágenes</p>
         <div className="fragment fade-in-then-semi-out w-full flex flex-col font-medium text-[1.125rem] text-left ">
           <div className="h-fit">
             <img src="/copilot-user-you.png" alt="copilot-user-you" className="h-fit" />

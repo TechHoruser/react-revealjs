@@ -1,10 +1,10 @@
-interface BingExample1Props {
+interface Props {
   sectionKey: string
 }
 
-export const BingExample1 = ({
+export const ChatGPTEspanol = ({
   sectionKey,
-}: BingExample1Props) =>
+}: Props) =>
   <section key={`${sectionKey}-0`}>
     <div className="w-full h-full flex justify-center align-center">
       <div className="w-3/5">
